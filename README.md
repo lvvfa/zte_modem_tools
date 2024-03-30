@@ -1,22 +1,21 @@
 # ENV
-
+安装python3
 ```
-python3 -m venv .venv
+python -m venv .venv
 source ./.venv/bin/activate
 pip install -r requirements.txt
 ```
 
 # zte_factroymode.py
-
-open telnet(use embed user/pass to 192.168.1.1 80):
-
-`python3 zte_factroymode.py telnet`
-
-or custom args
-
-`python3 zte_factroymode.py --user CUAdmin --pass CUAdmin --ip 192.168.1.1 --port 80 telnet open`
-
-```shell
+系列通用密码实验
+```
+python3 zte_factroymode.py telnet
+```
+指定密码端口开telnet
+```
+python zte_factroymode.py --user CUAdmin --pass Aa888888 --ip 192.168.1.1 --port 80 telnet open
+```
+shell
 $ python3 ./zte_factroymode.py -h
 usage: zte_factroymode [-h] [--user USER [USER ...]] [--pass PASS [PASS ...]] [--ip IP] [--port PORT] {telnet,serial} ...
 
