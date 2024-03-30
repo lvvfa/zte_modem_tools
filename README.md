@@ -9,7 +9,7 @@ pip install -r requirements.txt
 # zte_factroymode.py
 系列通用密码实验
 ```
-python3 zte_factroymode.py telnet
+python zte_factroymode.py telnet
 ```
 指定密码端口开telnet
 ```
